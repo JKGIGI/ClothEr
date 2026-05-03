@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClothEr | Verified Circular Fashion</title>
+    <!-- 引入 Tailwind CSS 工具，這能讓我們快速套用你的墨綠色與米白色 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cloth-green': '#1A302B',
+                        'cloth-cream': '#F9F8F2',
+                        'cloth-gold': '#D4AF37' // 點綴用的淡金色
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cloth-cream text-cloth-green font-sans min-h-screen flex flex-col items-center justify-center">
+
+    <!-- 網頁主要內容區塊 -->
+    <main class="text-center px-6">
+        <!-- Logo 區塊 -->
+        <h1 class="text-5xl md:text-7xl font-serif font-bold tracking-tight mb-4">
+            Cloth<span class="text-cloth-gold italic">Er</span>
+        </h1>
+        
+        <!-- 大標題 -->
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">
+            Verified Circular Fashion.
+        </h2>
+        
+        <!-- 副標題 -->
+        <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 opacity-80">
+            Shop pre-loved fashion with absolute confidence. <br>
+            AI-verified condition, transparent history, and zero greenwashing.
+        </p>
+
+        <!-- 行動呼籲按鈕 -->
+        <button class="bg-cloth-green text-cloth-cream px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-90 transition-all shadow-lg">
+            Shop AI-Verified
+        </button>
+    </main>
+
+</body>
+</html>
