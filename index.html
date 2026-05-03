@@ -48,3 +48,127 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClothEr | Verified Circular Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cloth-green': '#1A302B',
+                        'cloth-cream': '#F9F8F2',
+                        'cloth-gold': '#D4AF37'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cloth-cream text-cloth-green font-sans min-h-screen">
+
+    <!-- 區塊一：首頁視覺焦點 (你原本看見的畫面) -->
+    <header class="h-screen flex flex-col items-center justify-center text-center px-6">
+        <h1 class="text-5xl md:text-7xl font-serif font-bold tracking-tight mb-4">
+            Cloth<span class="text-cloth-gold italic">Er</span>
+        </h1>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">
+            Verified Circular Fashion.
+        </h2>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 opacity-80">
+            Shop pre-loved fashion with absolute confidence. <br>
+            AI-verified condition, transparent history, and zero greenwashing.
+        </p>
+        <button class="bg-cloth-green text-cloth-cream px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-90 transition-all shadow-lg">
+            Shop AI-Verified
+        </button>
+    </header>
+
+    <!-- 區塊二：信任數據區 (呼應論文的 Eco-Credits 與平台信任) -->
+    <section class="bg-cloth-green text-cloth-cream py-16 px-6">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <p class="text-4xl font-bold text-cloth-gold mb-2">100%</p>
+                <p class="text-sm uppercase tracking-widest opacity-80">AI Verified</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-cloth-gold mb-2">50,000 kg</p>
+                <p class="text-sm uppercase tracking-widest opacity-80">CO₂ Saved</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-cloth-gold mb-2">DPP Ready</p>
+                <p class="text-sm uppercase tracking-widest opacity-80">EU 2027 Compliant</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 區塊三：AI 精選商品瀑布流 -->
+    <section class="max-w-6xl mx-auto py-24 px-6">
+        <h3 class="text-3xl font-bold mb-12 text-center">Freshly Scanned & Verified</h3>
+        
+        <!-- 商品卡片網格 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            
+            <!-- 卡片 1 -->
+            <div class="group cursor-pointer">
+                <div class="relative bg-white rounded-xl overflow-hidden aspect-[4/5] shadow-sm group-hover:shadow-xl transition-all">
+                    <!-- 商品圖片 -->
+                    <img src="https://images.unsplash.com/photo-1550614000-4b95d4ebfa24?auto=format&fit=crop&w=800&q=80" alt="Vintage Jacket" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                    <!-- AI 分數標章 (核心亮點) -->
+                    <div class="absolute top-4 right-4 bg-cloth-green text-cloth-cream text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
+                        <span class="text-cloth-gold">★</span> AI: 9.8
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-between items-start">
+                    <div>
+                        <p class="font-bold text-lg">Vintage Leather Jacket</p>
+                        <p class="text-sm opacity-70">100% Real Leather • 90s</p>
+                    </div>
+                    <p class="font-bold">£125</p>
+                </div>
+            </div>
+
+            <!-- 卡片 2 -->
+            <div class="group cursor-pointer">
+                <div class="relative bg-white rounded-xl overflow-hidden aspect-[4/5] shadow-sm group-hover:shadow-xl transition-all">
+                    <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&w=800&q=80" alt="Designer Bag" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-cloth-green text-cloth-cream text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
+                        <span class="text-cloth-gold">★</span> AI: 8.5
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-between items-start">
+                    <div>
+                        <p class="font-bold text-lg">Classic Shoulder Bag</p>
+                        <p class="text-sm opacity-70">Minimal Wear • Verified Auth</p>
+                    </div>
+                    <p class="font-bold">£85</p>
+                </div>
+            </div>
+
+            <!-- 卡片 3 -->
+            <div class="group cursor-pointer">
+                <div class="relative bg-white rounded-xl overflow-hidden aspect-[4/5] shadow-sm group-hover:shadow-xl transition-all">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80" alt="Retro Sweater" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-cloth-green text-cloth-cream text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
+                        <span class="text-cloth-gold">★</span> AI: 9.2
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-between items-start">
+                    <div>
+                        <p class="font-bold text-lg">Oversized Knit Sweater</p>
+                        <p class="text-sm opacity-70">Merino Wool • Micro-pilling noted</p>
+                    </div>
+                    <p class="font-bold">£45</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
